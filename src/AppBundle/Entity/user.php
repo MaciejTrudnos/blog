@@ -24,7 +24,7 @@ class user
      *
      * @var type 
      * 
-     * @ORM\ManyToOne(targetEntity="Comment", mappedBy="user")
+     * @ORM\OneToMany(targetEntity="Comment", mappedBy="user")
      */
     
     private $comments;
