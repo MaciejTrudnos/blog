@@ -20,7 +20,14 @@ class user
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-
+        /**
+     *
+     * @var type 
+     * 
+     * @ORM\ManyToOne(targetEntity="Comment", mappedBy="user")
+     */
+    
+    private $comments;
 
     /**
      * Get id

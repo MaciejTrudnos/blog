@@ -48,8 +48,15 @@ class Post
      * @ORM\Column(name="created_at", type="datetime")
      */
     private $createdAt;
-
-
+    /**
+     *
+     * @var 
+     * 
+     * @ORM\OneToMany(targetEntity="Comment", mappedBy="post")
+     */
+    
+    private $comments;
+    
     /**
      * Get id
      *
